@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');     // import mongoose module
 const Loc = mongoose.model('Location');   // import Location schema from /models/locations.js
 
-// resquest is asynchronous, thus needing 'async'
+// request is asynchronous, thus needing 'async'
 const locationsListByDistance = async (req, res) => {
   const lng = parseFloat(req.query.lng);
   const lat = parseFloat(req.query.lat);

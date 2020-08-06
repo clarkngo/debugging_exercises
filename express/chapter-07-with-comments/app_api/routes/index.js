@@ -14,6 +14,7 @@ const ctrlReviews = require('../controllers/reviews');
 //    Use router.route() to avoid duplicate route naming and thus typing errors.
 
 // a middleware sub-stack that handles GET and POST requests to the /locations/ path
+
 router
   .route('/locations')
   .get(ctrlLocations.locationsListByDistance)
