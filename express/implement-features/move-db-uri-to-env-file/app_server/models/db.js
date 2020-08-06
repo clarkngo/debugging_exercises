@@ -1,6 +1,5 @@
-
 const mongooose = require('mongoose');
-const dbURI = process.env.DB_URI;
+const dbURI = 'mongodb://localhost/Loc8r';
 mongooose.connect(dbURI, {useNewUrlParser: true});
 mongooose.connection.on('connected', ()=> {
   console.log(`Mongoose connected to ${dbURI}`)
