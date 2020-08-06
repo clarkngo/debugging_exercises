@@ -13,5 +13,5 @@ Step 3: Migrate your key to `.env` and add the following:
 DB_URI=your_mongo_uri
 ```
 
-Step 4: In `db.js`, replace the hard-coded GOOGLE API KEY use `process.env.DB_URI` in a file
+Step 4: In `db.js`, replace the hard-coded DB_URI use `process.env.DB_URI` in a file
 
