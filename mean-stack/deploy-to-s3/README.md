@@ -5,6 +5,13 @@
 ### Deploy the front-end to AWS S3
 We have tons of options to host our front-end code. AWS S3 is one of the best solutions to handle this. Usually, you will use S3 with Router53 and CloudFront to offer HTTPS and CDN capability.
 
+Note: don't forget to have a `.env` file in `book-store-backend/public`
+```
+DB_URI='mongodb+srv://your_username:your_password@cluster0-jlgti.mongodb.net/your_db?retryWrites=true&w=majority'
+port=3000
+```
+
+
 ### 1)	Open a terminal in the VS Code and navigate to the `/book-store` folder.
 
 ### 2) Run the following command to build a production version of Angular application:
